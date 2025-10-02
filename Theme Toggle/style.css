@@ -20,7 +20,6 @@ header {
 nav {
     height: 100%;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +85,7 @@ button {
 }
 
 #navbar-btn{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: white;
     background-color: #000;
 }
@@ -126,4 +125,88 @@ button {
 
 .dark-mode .right-main img {
     filter: invert(100%);
+}
+
+
+@media (max-width: 600px) {
+    .left-part {
+        line-height: 3vh;
+    }
+
+
+    .left-part h2 {
+        font-size: 7vw;
+    }
+
+    .left-part p {
+        font-size: 5vw;
+        margin-left: 2.5vw;
+        font-weight: 400;
+    }
+
+    #navbar-btn{
+        color: white;
+        background-color: #000;
+        height: 6vh;
+        width: 25vw;
+        border: none;
+        border-radius: 10px;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    
+    main {
+        height: calc(100vh - 19vh);
+        /* padding: 2vh 5vh; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-main {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 5.6vh;
+        justify-content: center;
+        padding: 0vh 2vh;
+        margin-top: 4vh;
+
+    }
+
+    .left-main h1 {
+        font-size: 5vh;
+    }
+
+    .left-main p {
+        font-size: 1.3vh;
+        line-height: 1.4vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    button {
+        height: 6vh;
+        width: 10vh;
+        border: none;
+        background-color: #ededed;
+        border-radius: 10px;
+        font-size: 1.18vh;
+        font-weight: 600;
+    }
+
+    .right-main {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+
+    }
+
+    .right-main img {
+        height: 30vh;
+    }
 }
