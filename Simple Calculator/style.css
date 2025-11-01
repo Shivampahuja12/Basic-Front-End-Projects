@@ -1,0 +1,90 @@
+/* Reset default margins and paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #2e2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator body */
+.calculator {
+    background-color: #000;
+    border-radius: 30px;
+    width: 320px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Display screen */
+.display {
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General button style */
+.btn {
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 62px;
+    width: 62px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Number buttons */
+.number {
+    background-color: #333;
+    color: white;
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+/* Function buttons (AC, %, ±) */
+.function {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+/* Zero button spans two columns */
+.zero {
+    grid-column: span 2;
+    border-radius: 35px;
+    width: 100%;
+}
+
+/* Hover effect */
+.btn:hover {
+    filter: brightness(120%);
+}
+
+/* Active (pressed) effect */
+.btn:active {
+    transform: scale(0.95);
+}
